@@ -93,4 +93,11 @@ body {
   border-radius: 1em;
 }
 
+table {
+width:100%;
+background-color:#eeeeee;
+border-collapse:collapse;border-width:1px;
+border-style:solid;
+padding-bottom:2em;
+}
 
