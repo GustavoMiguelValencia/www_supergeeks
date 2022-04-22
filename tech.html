@@ -2,12 +2,11 @@
 <html>
   <head>
     <!--
-    The following two lines utilize static Bootstrap 5 CSS and JS files from the
-    Start Bootstrap - Modern Business v.5.0.5 Template. The template is licensed
-    under MIT and can be found at https://github.com/StartBootstrap/startbootstrap-modern-business/blob/master/LICENSE.
+    The following two lines utilize ready-to-use compiled CSS and JS code for
+    Bootstrap 5.0.2 that is statically available in our assets folder.
     -->
-    <link href="assets/css/styles.css" rel="stylesheet"/>
-    <script src="assets/js/scripts.js"></script>
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <script src="assets/js/bootstrap.js"></script>
     <link rel="shortcut icon" href="assets/images/SG_Logo.png" type="image/x-icon">
     <title>GeekSurvey - Tech</title>
     <meta charset="utf-8">
@@ -66,7 +65,16 @@
         <div class="row gx-5 align-items-center">
           <div>
             <h2 class="fw-bolder">Technologies</h2>
-            <p class="lead fw-normal text-muted mb-0">GeekSurvey is a Django web application. It's deployed as a Docker container.</p>
+            <p class="lead fw-normal text-muted mb-0">
+              GeekSurvey is developed as a web application using the Django web framework on the backend and the Bootstrap 5 framework on the frontend. It is deployed on an Ubuntu virtual private server on Oracle Cloud using NGINX as a reverse proxy
+              and Gunicorn as an application server. GeekSurvey utilizes a SQLite database for data storage. To handle logging in with social accounts, such as GitHub and Google, GeekSurvey uses the OAuth delegated authorization framework. For payment
+              processing, GeekSurvey utilizes a sandbox environment provided by PayPal Developer. This allows for testing using mock accounts and payments. Finally, GeekSurvey integrates with Google Forms as the default survey taking platform.
+            </p><br>
+            <p class="lead fw-normal text-muted mb-0">
+              The SuperGeeks team utilized a wide variety of development environments during the development of GeekSurvey. Some team members utilized the PyCharm IDE, while others utilized text editors such as Vim and Atom for code editing. For testing and
+              running changes, team members ran the GeekSurvey Django application locally through the command line. For git, team members utilized a command line interface, either through a native terminal/command prompt or through other applications such as
+              Git Bash. Development was also performed on varying operating systems, such as macOS Monterey and Windows 10.
+            </p>
           </div>
         </div>
       </div>
@@ -96,8 +104,10 @@
         <div class="row gx-5 align-items-center">
           <div>
             <h2 class="fw-bolder">Google Forms Demo</h2>
-            <p class="lead fw-normal text-muted mb-0"><a class="text-muted mb-0" href="assets/docs/SG-GoogleFormsDemo.mp4"> Click Here </a> </p>
-            <p class="lead fw-normal text-muted mb-0">A short demonstration using Google Forms to track survey participation. This shows the process of creating a Google Form survey and linking back to GeekSurvey <strong>only upon completion</strong> of the survey. Using this, we can write some backend code to track participation.<p>
+            <p class="lead fw-normal text-muted mb-0">
+              <a class="text-muted mb-0" href="assets/docs/SG-GoogleFormsDemo.mp4"> Click here</a> for a short demonstration using Google Forms to track survey participation. This shows the process of creating a Google Form survey
+              and linking back to GeekSurvey <strong>only upon completion</strong> of the survey. Using this, we can track participation on the backend.
+            </p>
           </div>
         </div>
       </div>

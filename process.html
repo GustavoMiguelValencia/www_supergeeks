@@ -2,12 +2,11 @@
 <html>
   <head>
     <!--
-    The following two lines utilize static Bootstrap 5 CSS and JS files from the
-    Start Bootstrap - Modern Business v.5.0.5 Template. The template is licensed
-    under MIT and can be found at https://github.com/StartBootstrap/startbootstrap-modern-business/blob/master/LICENSE.
+    The following two lines utilize ready-to-use compiled CSS and JS code for
+    Bootstrap 5.0.2 that is statically available in our assets folder.
     -->
-    <link href="assets/css/styles.css" rel="stylesheet"/>
-    <script src="assets/js/scripts.js"></script>
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <script src="assets/js/bootstrap.js"></script>
     <link rel="shortcut icon" href="assets/images/SG_Logo.png" type="image/x-icon">
     <title>GeekSurvey - Process</title>
     <meta charset="utf-8">
@@ -89,12 +88,14 @@
           <div>
             <h2 class="fw-bolder">Schedule, Resources, and Budget</h2>
             <p class="lead fw-normal text-muted mb-0">
-              Our schedule showing the project plan can be seen below. SuperGeeks must complete initial development on GeekSurvey by May of 2022.
-              Development strategy details can be found in documents such as Technical Feasibility and Requirements Specification. As of November 2021, we anticipate
-              that this project will not have to use any monetary resources, as hosting can be accomplished through NAUITS.
-              Current progress is a bare bones foundation and git repository for GeekSurvey which can be found at the official SuperGeeks GitHub organization.
-            </p>
-            <img src="assets/images/SG-ScheduleV1.png" alt="Geeksurvey Project Plan" style="width:100%;">
+              A simplified overview of our schedule showing the project plan can be seen below. SuperGeeks must complete initial development on GeekSurvey by May of 2022.
+              Development strategy details can be found in documents such as Technical Feasibility, Requirements Specification, and Software Design Document. As of April 2022, the project has
+              not used any monetary resources, as it is hosted for free through Oracle Cloud.
+              Current progress is a feature-complete MVP and a git repository for GeekSurvey which can be found at the official <a class="text-muted mb-0" href="https://github.com/NAU-SuperGeeks">SuperGeeks GitHub organization</a>.
+            </p><br>
+            <div><img src="assets/images/SG-ScheduleV2.png" alt="Geeksurvey Project Plan" style="width:100%;"></div><br>
+            <!-- TODO: Finalize Gantt Chart Excel Schedule before the end of the semester -->
+            <p class="lead fw-normal text-muted mb-0">Our complete schedule can be found in our documents below.</p>
           </div>
         </div>
       </div>
@@ -110,13 +111,26 @@
           <div>
             <h2 class="fw-bolder">Documents</h2>
             <p class="lead fw-normal text-muted mb-0">
+              <h4 class="text-muted mb-0">CS476 Requirements Engineering - Fall 2021</h4>
               <p><a class="text-muted mb-0" href="assets/docs/SG-TeamInventory.pdf">Team Inventory</a> - Information about the team members.</p>
               <p><a class="text-muted mb-0" href="assets/docs/SG-TeamStandardsV1.pdf">Team Standards</a> - Standards of conduct for the team.</p>
               <p><a class="text-muted mb-0" href="assets/docs/SG-ProjectMiniIntroduction.pdf">Project Mini Introduction</a> - Slides from a short presentation about the project overall.</p>
               <p><a class="text-muted mb-0" href="assets/docs/SG-TechnicalFeasibilityV1.pdf">Tech Feasibility</a> - Research about the feasibility of some chosen solutions.</p>
-              <p><a class="text-muted mb-0" href="assets/docs/SG-RequirementsSpecificationV1.1.pdf">Requirements Specification</a> - Official requirements for the MVP we will deliver Spring of 2022.</p>
-              <p><a class="text-muted mb-0" href="assets/docs/SG-DesignReview1.pdf">Design Review #1</a> - Slides from the Design Review #1 presentation, which outlines initial progress, requirements, and project plan.</p>
+              <p><a class="text-muted mb-0" href="assets/docs/SG-DesignReview1.pdf">Design Review #1</a> - Slides from the Design Review #1 presentation, which outlines initial progress, requirements, challenges and risks, and project plan.</p>
               <p><a class="text-muted mb-0" href="assets/docs/SG-MiniVideo.mp4">Mini Video</a> - A short elevator-pitch presentation for GeekSurvey.</p>
+              <p><a class="text-muted mb-0" href="assets/docs/SG-RequirementsSpecificationV1.2.pdf">Requirements Specification</a> - Official requirements for the MVP we will deliver Spring of 2022.</p>
+              <p><a class="text-muted mb-0" href="assets/docs/SG-TechnicalDemo.pdf">Technical Demo</a> - Plan to demo initial technical challenges faced by the team and how they were addressed, as well as plans to reduce risk for additional challenges.</p>
+
+              <h4 class="text-muted mb-0">CS486C Capstone Experience - Spring 2022</h4>
+              <p><a class="text-muted mb-0" href="assets/docs/SG-CommunicationMemoV2.pdf">Communication Memo</a> - Team communication standards for the second half of the senior capstone sequence.</p>
+              <p><a class="text-muted mb-0" href="assets/docs/SG-SoftwareDesignDocument.pdf">Software Design Document</a> - Outlines planned implementation and architecture of project.</p>
+              <p><a class="text-muted mb-0" href="assets/docs/SG-DesignReview2.pdf">Design Review #2</a> - Slides from the Design Review #2 presentation, which outlines continuing progress, requirements, initial implementation, challenges and their resolutions, and continuing project plan.</p>
+              <p><a class="text-muted mb-0" href="assets/docs/SG-AlphaPrototypeDemo.pdf">Alpha Prototype Demo</a> - Plan to demo use case scenarios and known short-comings of the alpha prototype.</p>
+              <p><a class="text-muted mb-0" href="assets/docs/SG-SoftwareTestingPlan.pdf">Software Testing Plan</a> - Plan to conduct unit, integration, and usability testing, as well as testing methods and challenges associated with each.</p>
+              <p><a class="text-muted mb-0" href="assets/docs/SG-DesignReview3.pdf">Design Review #3</a> - Slides from the Design Review #3 presentation, which outlines continuing progress, requirements, continuing implementation, challenges and their resolutions, continuing project plan, and testing plan.</p>
+              <p><a class="text-muted mb-0" href="assets/docs/SG-FinalUGRADSPoster.pdf">UGRADS Poster</a> - Project poster presented at NAU's 2022 Undergraduate Expo and Symposium.</p>
+              <p><a class="text-muted mb-0" href="assets/docs/SG-GanttChartSchedule.xlsx">Complete Development Schedule</a> - Our software development and deliverable schedule.</p>
+              <!-- TODO: Add further deliverables and documents produced by the team during UGRADS (Week 15) and before the end of the semester (Week 17) -->
             </p>
           </div>
         </div>

@@ -1,3 +1,3 @@
-# Website source for GeekSurvey by SuperGeeks
+# Website Source Code for the SuperGeeks Team Website
 
-Generated using https://github.com/timgiroux/ssg_geeksurvey
+The live deployment can be found here: https://ceias.nau.edu/capstone/projects/CS/2022/SuperGeeks/
