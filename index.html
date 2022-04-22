@@ -2,13 +2,12 @@
 <html>
   <head>
     <!--
-    The following two lines utilize the Bootstrap 5 CDN. This is temporary and
-    for site redesign only. These two lines will be removed once the site is
-    redesigned and will be replaced with static CSS and JS Bootstrap files.
+    The following two lines utilize ready-to-use compiled CSS and JS code for
+    Bootstrap 5.0.2 that is statically available in our assets folder.
     -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="images/supergeeks_logo.png" type="image/x-icon">
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <script src="assets/js/bootstrap.js"></script>
+    <link rel="shortcut icon" href="assets/images/SG_Logo.png" type="image/x-icon">
     <title>GeekSurvey - Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +22,7 @@
     -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container px-5">
-        <img src="images/gkslogo_dark.png" alt="Logo for the Capstone Team" width="50px" height="50px">
+        <img src="assets/images/SG_Logo_Dark.png" alt="Logo for the Capstone Team" width="50px" height="50px">
         <a class="navbar-brand " href="index.html">GeekSurvey</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,12 +52,13 @@
         <div class="container px-5">
           <div class="row gx-5 justify-content-center">
             <div class="col-lg-6">
-              <img class="mx-auto d-block" src="images/geeksurvey_logo_hd.png" width="200px" height="200px">
+              <!-- TODO: Replace the following image with the upcoming final version of the project mini-video -->
+              <img class="mx-auto d-block" src="assets/images/SG_Logo_HD.png" width="200px" height="200px">
               <div class="text-center my-5">
                 <h1 class="display-5 fw-bolder text-white mb-2">The GeekSurvey Project</h1>
                 <p class="lead text-white-50 mb-4">
                   GeekSurvey is a tool for coordinating research. To read more about GeekSurvey, see the
-                  <a class="text-white-50" href="docs/Gerosa-GeekSurvey.pdf">Capstone project proposal</a> written by the project sponsors.
+                  <a class="text-white-50" href="assets/docs/Gerosa-GeekSurveyProjectProposal.pdf">Capstone project proposal</a> written by the project sponsors.
                 </p>
               </div>
             </div>
@@ -73,10 +73,12 @@
       <section class="py-5 bg-light" id="scroll-target">
         <div class="container px-5 my-5">
           <div class="row gx-5 align-items-center">
-            <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="images/supergeeks_team.png" alt="Image of the Four SuperGeeks team members"/></div>
+            <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="assets/images/SG_Team.png" alt="Image of the Four SuperGeeks team members"/></div>
             <div class="col-lg-6">
               <h2 class="fw-bolder">Team Information</h2>
-              <p class="lead fw-normal text-muted mb-0"><a class="text-muted mb-0" href="supergeeks.html">SuperGeeks</a> is a team of Computer Science students at Northern Arizona University. The members of SuperGeeks are Tim Giroux, Pengfei Liu, Kyle Austria, and Gustavo Valencia.</p>
+              <p class="lead fw-normal text-muted mb-0">
+                <a class="text-muted mb-0" href="supergeeks.html">SuperGeeks</a> is a team of Computer Science students at Northern Arizona University. The members of SuperGeeks are Tim Giroux, Pengfei Liu, Kyle Austria, and Gustavo Valencia.
+              </p>
             </div>
           </div>
         </div>
@@ -89,10 +91,13 @@
       <section class="py-5">
         <div class="container px-5 my-5">
           <div class="row gx-5 align-items-center">
-            <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="images/headshots/GerosaSteinmacherStitch.jpg" alt="Image of Dr. Marco Gerosa and Dr. Igor Steinmacher"/></div>
+            <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="assets/images/headshots/GerosaSteinmacherStitch.jpg" alt="Image of Dr. Marco Gerosa and Dr. Igor Steinmacher"/></div>
               <div class="col-lg-6">
                 <h2 class="fw-bolder">Project Sponsors</h2>
-                <p class="lead fw-normal text-muted mb-0">The sponsors of GeekSurvey are <a class="text-muted mb-0" href="https://directory.nau.edu/person/mag696">Marco Gerosa</a> and <a class="text-muted mb-0" href="https://www.igor.pro.br/">Igor Steinmacher.</a> Dr. Gerosa and Dr. Steinmacher are distinguished Software Engineering researchers. They have found that there is a communication problem with recruiting participants for S.E. studies. This is the problem that GeekSurvey sets out to solve. </p>
+                <p class="lead fw-normal text-muted mb-0">
+                  The sponsors of GeekSurvey are <a class="text-muted mb-0" href="https://directory.nau.edu/person/mag696">Marco Gerosa</a> and <a class="text-muted mb-0" href="https://www.igor.pro.br/">Igor Steinmacher</a>. Dr. Gerosa and
+                  Dr. Steinmacher are distinguished Software Engineering researchers. They have found that there is a communication problem with recruiting participants for Software Engineering studies. This is the problem that GeekSurvey sets out to solve.
+                </p>
               </div>
           </div>
         </div>
@@ -105,7 +110,7 @@
       <section class="py-5 bg-light" id="scroll-target">
         <div class="container px-5 my-5">
           <div class="row gx-5 align-items-center">
-            <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="images/geeksurvey_logo_hd.png" alt="Placeholder image for Team Mentor"/></div>
+            <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="assets/images/SG_Logo_HD.png" alt="Placeholder image for Team Mentor"/></div>
               <div class="col-lg-6">
                 <h2 class="fw-bolder">Technical Advisor</h2>
                 <p class="lead fw-normal text-muted mb-0">The technical advisor to SuperGeeks is Felicity H. Escarzaga. She recently earned a degree in Mechanical Engineering, and is currently working towards a PhD in Informatics.</p>
